@@ -1,0 +1,33 @@
+12. O custo ao consumidor de um carro novo é a soma 
+do preço de fábrica com o percentual de lucro do distribuidor 
+e dos impostos aplicados ao preço de fábrica. Faça um programa 
+que receba o preço de fábrica de um veículo, o percentual de 
+lucro do distribuidor e o percentual de impostos, calcule e mostre:
+a. o valor correspondente ao lucro do distribuidor;
+b. o valor correspondente aos impostos;
+c. o preço final do produto.
+
+
+public static void main(String[] args) {
+ double preco_fab,percent_lucro,percent_impos,preco_final;
+ double valor_impostos,valor_lucro,preco_imposto;
+
+ System.out.print("Digite o preço de fabrica: ");
+ preco_fab = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o percentual de lucro: ");
+ percent_lucro = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o percentual de imposto: ");
+ percent_impos = Double.parseDouble(System.console().readLine());
+ valor_impostos = preco_fab * percent_lucro /100;
+ valor_lucro = preco_fab * percent_impos /100;
+ preco_final = preco_fab + valor_impostos + valor_lucro;
+ System.out.printf("Lucro do distribuidor: ",valor_lucro);
+ System.out.printf("Impostos: ",valor_impostos);
+ System.out.printf("Preço Final: ",preco_final);
+
+  }
+    
+}
+
+
+

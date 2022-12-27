@@ -1,0 +1,17 @@
+8. Faça um programa que calcule e mostre a área de um triângulo.
+ Sabe se que: Área = (base x altura) / 2. A base e altura devem ser 
+informadas pelo usuário.
+
+
+public static void main(String[] args) {
+ double base_tri , alt_tri,area;
+ System.out.print("Digite a Base do triangulo: ");
+ base_tri = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite a altura do triangulo: ");
+ alt_tri = Double.parseDouble(System.console().readLine());
+ area = (base_tri *alt_tri) /2;
+ System.out.printf("área do Triangulo é ",area);
+ 
+    }
+    
+}

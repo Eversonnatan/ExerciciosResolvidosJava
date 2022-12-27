@@ -1,0 +1,19 @@
+
+2. Faça um programa que receba dois números, 
+calcule e mostre a divisãodo primeiro pelo segundo. 
+Sabe-se que o segundo número não pode serzero, portanto, 
+não é necessário se preocupar com isso neste exercício.
+
+
+
+public static void main(String[] args) {
+        double  n1,n2,div ;
+        System.out.print("Digite o Primeiro valor: ");
+        n1 = Double.parseDouble(System.console().readLine());
+        System.out.print("Digite o Primeiro valor: ");
+        n2 = Double.parseDouble(System.console().readLine());
+        div = n1 / n2;
+        System.out.printf("O resultado da divisão é ", div);
+    }
+    
+}

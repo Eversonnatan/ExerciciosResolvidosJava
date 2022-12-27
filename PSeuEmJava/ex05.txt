@@ -1,0 +1,19 @@
+5. Faça um programa que receba o salário base de um funcionário, 
+calcule e mostre o salário a receber, sabendo-se que o funcionário 
+tem gratificação de 5% sobre o salário base 
+que será acrescentado ao salário) e paga imposto de 7% sobre este salário 
+(o que será descontado do salário).
+
+
+public static void main(String[] args) {
+  double sal_base,sal_receb,imposto,sal_total ;
+  System.out.print("Digite o salario base: ");
+  sal_base = Double.parseDouble(System.console().readLine());
+  sal_receb = sal_base - ((sal_base*5)/100);
+  imposto = sal_base -((sal_base*7)/100);
+  sal_total =(sal_base - imposto ) + sal_receb;
+  System.out.printf("O Salário total com desconto de imposto sera: ",sal_total);
+
+    }
+    
+}

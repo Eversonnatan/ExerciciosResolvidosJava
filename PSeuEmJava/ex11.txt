@@ -1,0 +1,26 @@
+11. Faça um programa que receba o ano de nascimento de uma pessoa e o ano 
+atual, calcule e mostre:
+a. a idade dessa pessoa em anos;
+b. a idade dessa pessoa em meses;
+c. a idade dessa pessoa em dias (considerando que cada ano possui 365 dias);
+d. a idade dessa pessoa em semanas (cada ano possui 52 semanas).
+
+
+public static void main(String[] args) {
+ double ano_nasc,ano_atual,id_anos,id_mes,id_dias,id_sema;
+ System.out.print("Digite o seu ano de nascimento: ");
+ ano_nasc = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o ano atual: ");
+ ano_atual = Double.parseDouble(System.console().readLine());
+ id_anos = ano_nasc - ano_atual;
+ id_mes = ano_nasc * 12;
+ id_dias = ano_nasc * 365;
+ id_sema = ano_nasc * 52;
+ System.out.printf("Sua idade atual é " ,id_anos);
+ System.out.printf("Sua idade em Mês é ",id_mes);
+ System.out.printf("Sua idade em Dias é ",id_dias);
+ System.out.printf("Sua idade em Semanas é ",id_sema);
+ 
+   }
+    
+}

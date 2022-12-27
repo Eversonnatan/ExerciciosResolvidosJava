@@ -1,0 +1,25 @@
+13. Faça um programa que receba o número de horas trabalhadas 
+e o valor do salário mínimo, calcule e mostre o salário a 
+receber seguindo estas regras:
+a. a hora trabalhada vale um décimo do salário mínimo;
+b. o salário bruto equivale ao número de horas trabalhadas 
+multiplicado pelo valor da hora trabalhada;
+c. o imposto equivale a 3% do salário bruto;
+d. o salário a receber equivale ao salário bruto menos o imposto.
+
+public static void main(String[] args) {
+ double nHoras_trab,sal_min,sal_rec,hora_trab,impost,sal_bruto;
+ System.out.print("Digite o numero de horas trabalhadas: ");
+ nHoras_trab  = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o valor do sálario mínimo: ");
+ sal_min  = Double.parseDouble(System.console().readLine());
+ hora_trab = (1/ 10) * sal_min;
+ sal_bruto = nHoras_trab * hora_trab;
+ impost = sal_bruto * 0.03;
+ sal_rec = sal_bruto - impost;
+ System.out.printf("O salário a receber será " ,sal_rec);
+ 
+
+   }
+    
+}

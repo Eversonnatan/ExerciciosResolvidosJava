@@ -1,0 +1,18 @@
+   
+1. Faça um programa que receba dois números, calcule e mostre a
+subtração do primeiro número pelo segundo.
+
+
+public static void main(String[] args) {
+        double  n1, n2,sub;
+        System.out.print("Digite o Primeiro valor: ");
+        n1 = Double.parseDouble(System.console().readLine());
+        System.out.print("Digite o Primeiro valor: ");
+        n2 = Double.parseDouble(System.console().readLine());
+        sub = n1 - n2;
+        System.out.printf("A subtrção dos valores é ", sub);
+    }
+    
+}
+
+

@@ -1,0 +1,32 @@
+7. Faça um programa que receba três 
+notas e seus respectivos pesos, 
+calcule e mostre a média ponderada 
+dessas notas. Para calcular a média 
+ponderada, multiplique cada nota por seus respectivos pesos, 
+some todos os resultados e divida pela soma dos pesos. 
+Por exemplo, se as notas forem 10, 5 e 6, e os pesos 1, 2 e 3, 
+a média final do estudante seria 10 x 1 + 5 x 2+ 3 x 6, 
+que resulta em 10 + 10 + 18 = 38.
+
+public static void main(String[] args) {
+ double n1, n2, n3, p1, p2, p3, mediaPon;
+ System.out.print("Digite a primeira nota: ");
+ n1 = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite a Segunda nota: ");
+ n2 = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite a terceira nota: ");
+ n3 = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o peso da primeira nota: ");
+ p1 = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o peso da segunda nota: ");
+ p2 = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite o peso da terceira nota: ");
+ p3 = Double.parseDouble(System.console().readLine());
+ mediaPon = ((n1 * p1) + (n2 * p2) + (n3 * p3)) / (p1 + p2 + p3);
+ System.out.printf("A média ponderada das três notas é: ",mediaPon);
+
+
+    }
+    
+}
+

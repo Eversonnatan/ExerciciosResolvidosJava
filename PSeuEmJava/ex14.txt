@@ -1,0 +1,23 @@
+14. Sabe-se que o quilowatt de energia custa um quinto do salário mínimo. 
+Faça um programa que receba o valor do salário mínimo e a quantidade de 
+quilowatts consumida por uma residência, calcule e mostre:
+a. o valor de cada quilowatt;
+b. o valor a ser pago por essa residência;
+c. o valor a ser pago com desconto de 15%.
+
+public static void main(String[] args) {
+ double sal, qtdkw, custokw, desc;
+
+ System.out.print("Digite o valor do salário mínimo: ");
+ sal = Double.parseDouble(System.console().readLine());
+ System.out.print("Digite a quantidade de quilowatts gasta pela residência: ");
+ qtdkw = Double.parseDouble(System.console().readLine());
+ custokw = sal / 5;
+ desc = custokw * 0.15;
+ System.out.print("O valor do quilowatt é: ",custokw);
+ System.out.print("O valor a ser pago pela residência é: ",custokw);
+ System.out.print("O valor a ser pago com desconto de 15% é: ",custokw - desc);
+ 
+   }
+    
+}
